@@ -1,0 +1,36 @@
+<script src="//fast.wistia.com/assets/external/E-v1.js" async></script>
+
+<script>
+window._wq = window._wq || [];
+
+
+var getNextVid  = (function(){
+  var vids = ['l06endf6xe'];
+  var currentIndex = -1;
+
+  return function () {
+    currentIndex += 1;
+    return vids[currentIndex];
+  }
+}());
+
+
+
+window.onReplaceClick;
+
+_wq.push({ "2l22ma5z6k": function(video) {
+
+  onReplaceClick = function() {
+    var newVid = getNextVid();
+    video.replaceWith(newVid, {inlineOptionsOnly: true})
+  }
+}});
+</script>
+
+
+
+<div onclick="onReplaceClick()">replacevid</div>
+<br /><br />
+<div class="wistia_embed wistia_async_2l22ma5z6k" style="width:640px;height:360px;"></div>
+
+
